@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<title>Crypto-Kasse</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="robots" content="noindex" />
+		<META HTTP-EQUIV="CONTENT-LANGUAGE" CONTENT="de-DE">
+		<META NAME="CONTENT-LANGUAGE" CONTENT="de-DE">
+		<META NAME="OWNER" CONTENT="admin@hof-biergarten.de">
+		<META NAME="AUTHOR" CONTENT="hof-biergarten.de">
+		<link href="style.css" rel="stylesheet">
+		<link href="buttons.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script src="jquery-2.2.2.min.js"></script>
+		<script src="qrcode.js"></script>
+
+	</head>
+	<body>
+		<div id="content">
+	    <div id="schritt1">
+				<h1>Krypto-Kasse</h1>
+				<p class="center"><button id="hilfe-btn" class="btn" name="hilfe">?</button><p>
+	      <h2>Euro-Summe</h2>
+	        <p class="center"><input id="summe" type="tel" class="w3-border w3-round-large tel" placeholder="1€ - 99€" autofocus autocomplete="off" maxlength="5"></input></p>
+					<p class="center"><button id="submitEuro" class="btn" name="summe">Bestätigen</button></p>
+				<div class="fehlendeEingabe">
+					<p class="fehlendeEingabe">Eingabe prüfen!</p>
+					- Feld darf nicht leer sein<br>
+					- Nur Beträge kleiner 100€<br>
+					- Du schaffst das!
+				</div>
+	    </div>
+
+	    <div id="schritt2">
+	      <h1 id="euro"></h1>
+				<h1>in</h1>
+				<div class="center">
+		      <p><button id="chooseEther" class="btn" type="submit">Ether</button></p>
+		      <p><button id="chooseBitcoin" class="btn" type="submit">Bitcoin</button></p>
+		      <p><button id="chooseDentacoin" class="btn" type="submit">Dentacoin</button></p>
+				</div>
+	    </div>
+	    <div id="schritt3">
+	      <img src="logoBiergarten.png" alt="Logo" class="center">
+				<div id="qrcode"></div>
+				<p id="btcAddress"></p>
+				<p id="ethAddress"></p>
+				<p id="dcnAddress"></p>
+				<p id="btcSum"></p>
+				<p id="ethSum"></p>
+				<p id="dcnSum"></p>
+	    </div>
+			<div id="hilfe">
+				<button id="zurueck" style="float: left;" class="btn" name="zurueck">&larr;</button><br>
+				<h1>Anleitung</h1>
+				<h4>
+				<ol>
+					<li>Bitte den Kunden sein Smartphone mit dem BG WLAN zu verbinden.</li>
+					<li>Folge den Schritten auf dem Display bis der QR-Code erscheint.</li>
+					<li>ZURÜCK geht es immer mit den Tasten unten am Handy.</li>
+					<li>Gib dem Kunden das Handy.</li>
+					<li>Der Kunde scannt den QR-Code mit seinem eigenen Smartphone ab, tippt den angebenen Krypto-Betrag bei sich ein und startet die Überweisung.</li>
+				</ol>
+				</h4>
+			</div>
+			<footer id="footer">
+				<h1 id="confirm"></h1>
+			</footer>
+			<script src="script.js"></script>
+		</div>
+	</body>
+</html>

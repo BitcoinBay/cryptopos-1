@@ -1,0 +1,100 @@
+.center {
+    text-align: center;
+}
+#content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cedce7+0,596a72+100;Grey+3D+%231 */
+  background: rgb(206,220,231); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */
+
+
+
+}
+
+h1, h2 {
+  text-align: center;
+  color: #28343B;
+  margin-top: 12%;
+}
+h2, #hilfe-btn {
+  margin-top: 10%!important;
+}
+p {
+  text-align: center;
+  color: #ffffff;
+}
+
+#confirm {
+  color: white;
+  font-size: 150%;
+  margin-top: 3%;
+}
+
+.fehlendeEingabe {
+  font-size: small;
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#summe {
+  font-size: 150%;
+  margin-top: 5%;
+}
+
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12%;
+}
+
+#qrcode > img {
+  border: 5px outset #A6B5BF;
+}
+
+#btcAddress, #ethAddress, #dcnAddress {
+  font-size: 90%
+}
+#ethSum, #dcnSum, #btcSum {
+  font-size: 140%;
+  margin-top: 20%;
+}
+
+#qrcode {
+  margin-top:20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:5%;
+  width: 18em;
+}
+
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:75px;
+   width:100%;
+   color: white;
+   background:green;
+}
